@@ -1,6 +1,13 @@
+.header {
+  padding: 30px 0 20px;
+  @include flex(column, center);
+}
 .header__title {
-    padding: 30px 0;
-    font-size: 3.6rem;
-    font-weight: $primary-font-weight; 
-    text-align: center;
+  padding: 10px 0;
+  font-size: 3.6rem;
+  font-weight: $primary-font-weight;
+  text-align: center;
+}
+.header__icon {
+  font-size: 4.0rem;
 }

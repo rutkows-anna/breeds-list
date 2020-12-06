@@ -3,8 +3,5 @@
   min-height: 100vh;
   background: $primary-color;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  @include flex(column, flex-start);
 }

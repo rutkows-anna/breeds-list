@@ -19,10 +19,7 @@
   border-radius: $border-radius;
   box-shadow: $primary-shadow;
   background-color: $secondary-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  @include flex(column, space-between);
 }
 .modal__button {
   align-self: flex-end;

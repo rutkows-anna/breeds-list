@@ -36,7 +36,6 @@ const reducerBreeds = (state, action) => {
 };
 
 const BreedsList = () => {
-  /* const [searchValue, setSearchValue] = useState(""); */
   const [state, dispatch] = useReducer(reducerBreeds, initialState);
 
   useEffect(() => {
@@ -61,7 +60,6 @@ const BreedsList = () => {
 
   const handleOnSearchChange = (searchValue) => {
     dispatch({ type: "SET_SEARCH_VALUE", payload: searchValue });
-    /* console.log(state.searchValue) */
   };
 
   return (

@@ -3,12 +3,12 @@
   max-width: 1600px;
   height: 100%;
   padding: 10px;
-  @include flexCenter(column);
+  @include flex(column, center);
 }
 .container {
   width: 100%;
   height: 100%;
   padding: 10px 0;
-  @include flexCenter(row);
+  @include flex(row, center);
   flex-wrap: wrap;
 }
