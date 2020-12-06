@@ -1,0 +1,10 @@
+@import "variables";
+@import "base";
+@import "mixins";
+@import "../App.scss";
+@import "../components/Header/Header.scss";
+@import "../components/BreedsList/BreedsList.scss";
+@import "../components/Error/Error.scss";
+@import "../components/Search/Search.scss";
+@import "../components/BreedItem/BreedItem.scss";
+@import "../components/Modal/Modal.scss";

@@ -1,0 +1,21 @@
+.breed__button {
+  width: 20%;
+  border: none;
+  @include inputStyle;
+
+  &:hover {
+    box-shadow: $secondary-shadow;
+    transform: scale(1.01);
+  }
+  &:focus {
+    outline: none;
+  }
+  @include mediaQuery(xxl) {
+    width: 40%;
+  }
+  @include mediaQuery(xs) {
+    width: 100%;
+    padding: 18px;
+    margin: 10px 0;
+  }
+}

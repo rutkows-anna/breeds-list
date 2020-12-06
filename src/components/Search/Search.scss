@@ -1,0 +1,17 @@
+.search {
+  width: 100%;
+  max-width: 500px;
+  border: solid 2px $secondary-color;
+  @include inputStyle;
+  &:hover {
+    box-shadow: $secondary-shadow;
+  }
+  &:focus {
+    outline: none;
+    border: solid 1px #30303045;
+    box-shadow: $secondary-shadow;
+  }
+  @include mediaQuery(xs) {
+    padding: 18px;
+  }
+}

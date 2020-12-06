@@ -1,0 +1,29 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin inputStyle() {
+  padding: 20px 28px;
+  margin: 10px;
+  border-radius: $border-radius;
+  box-shadow: $primary-shadow;
+  background-color: $secondary-color;
+  color: $font-color;
+  font-size: $primary-font-size;
+  text-transform: uppercase;
+}
+
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint==xs {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxl {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
